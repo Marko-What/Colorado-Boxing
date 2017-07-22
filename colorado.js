@@ -9,7 +9,7 @@
 			boxing.css({ transition: "transform 2.6s", transform: "rotate(" + -3940 + "deg)" });			
 		}
 
-	function boxMigration(){
+		function boxMigration(){
 			boxing.appendTo("div#wrap1");
 
 			function boxSlideIn(){
@@ -20,7 +20,7 @@
 			var wrap = $("div#wrap div#box").length;
 			if(wrap < 1) { 
 			
-			function wrapCon(){$("div#wrap1 div#box").slideUp(500);}
+		function wrapCon(){$("div#wrap1 div#box").slideUp(500);}
 
 			setTimeout(wrapCon, 1300);
 			
@@ -34,7 +34,7 @@
 			
 		}	
 
-	function boxMigration_Right(){
+		function boxMigration_Right(){
 			boxing.appendTo("div#wrap");
 
 			function boxSlideIn(){
@@ -49,15 +49,14 @@
 
 			setTimeout(wrapCon, 1300);
 			
-			function wait(){	
+		function wait(){	
 				$('div#wrap').children('div#box').unbind();
 				$("div#wrap div#box").prependTo("div#wrap1").slideDown(500);	
 				AnimationClickBind1();		
 			}
 			setTimeout(wait, 1600);
-			}		
-			
-}
+			}			
+		}
 
 			function AnimationLeftRight(){	
 					$this = $(this);
@@ -69,7 +68,6 @@
 					setTimeout(boxMigration, 2340);	
 					setTimeout(AnimationClickBind, 3340);		
 			}	
-
 
 			function AnimationLRightLeft(){
 					$this = $(this);
@@ -99,34 +97,24 @@
 	
 
 		function throw1(){
-		winWidth = $(window).width();
-			
-
-	
+			winWidth = $(window).width();
 			boxing.css("margin-left" , "350px");
-		boxing.animate({"margin-left" : winWidth}, { duration: 1800, queue: false})
-						.animate({"margin-top" : "155px"},1100, function(){
-										$(this).animate({"margin-top" : "0px"}, 1100, function(){
-										$(this).css({ transition: "transform 0s", transform: "rotate(" + 0 + "deg)" });
+			boxing.animate({"margin-left" : winWidth}, { duration: 1800, queue: false})
+							.animate({"margin-top" : "155px"},1100, function(){
+											$(this).animate({"margin-top" : "0px"}, 1100, function(){
+											$(this).css({ transition: "transform 0s", transform: "rotate(" + 0 + "deg)" });
+				});
 			});
-		});
-				
-	}
+		}
 
 
-
-
-
-		
 		function throw_Right(){
-		winWidth = -($(window).width());
-			 
-			/*boxing.css("margin-left" , "350px");*/
-		boxing.animate({"margin-left" : winWidth}, { duration: 1800, queue: false})
-						.animate({"margin-top" : "155px"},1100, function(){
-										$(this).animate({"margin-top" : "0px"}, 1100, function(){
-										$(this).css({ transition: "transform 0s", transform: "rotate(" + 0 + "deg)" });
+			winWidth = -($(window).width());
+			 /*boxing.css("margin-left" , "350px");*/
+			boxing.animate({"margin-left" : winWidth}, { duration: 1800, queue: false})
+							.animate({"margin-top" : "155px"},1100, function(){
+											$(this).animate({"margin-top" : "0px"}, 1100, function(){
+											$(this).css({ transition: "transform 0s", transform: "rotate(" + 0 + "deg)" });
+				});
 			});
-		});
-				
-	}
+		}
