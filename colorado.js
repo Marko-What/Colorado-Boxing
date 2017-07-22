@@ -34,7 +34,6 @@
 			
 		}	
 
-
 	function boxMigration_Right(){
 			boxing.appendTo("div#wrap");
 
@@ -60,9 +59,6 @@
 			
 }
 
-
-
-
 			function AnimationLeftRight(){	
 					$this = $(this);
 					$this.appendTo("div#wrap");
@@ -75,7 +71,6 @@
 			}	
 
 
-
 			function AnimationLRightLeft(){
 					$this = $(this);
 					$('div#wrap1').children('div#box').unbind();
@@ -86,9 +81,6 @@
 			}	
 
 
-
-		
-		
 		
 		$('div#wrap').children('div#box').bind('click',AnimationLeftRight);
 		$('div#wrap1').children('div#box').bind('click',AnimationRightLeft);		
@@ -105,8 +97,7 @@
 		}
 		
 	
-		
-	
+
 		function throw1(){
 		winWidth = $(window).width();
 			
